@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1993 A SALON COMPANY | Luxury Salon & Spa Services in Pune & Maharashtra</title>
+  <meta name="description" content="1993 A Salon Company - An inspirational luxury brand from the house of Salon Apple, serving superior quality hair, beauty, makeup, nails, spa & grooming services for Men and Women in Pune & Maharashtra." />
+  <meta name="keywords" content="1993 a salon company, best salon in pune, haircut, hair spa, beauty spa, nails, makeup, law college road salon, salon apple" />
+  <link rel="canonical" href="https://www.1993asaloncompany.com/" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Cursor Radial Spotlight -->
+  <div id="cursor-spotlight" class="cursor-spotlight"></div>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress-overlay" class="scroll-progress"></div>
+
+  <!-- Floating Sticky Action Button -->
+  <a href="javascript:void(0)" class="floating-enquire-btn" id="openEnquireModalBtn">
+    <i class="fa-solid fa-calendar-check"></i>
+    <span>Enquire Now</span>
+  </a>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#hero" class="logo-link">
+        <div class="logo-wrapper">
+          <span class="logo-text-number">1993</span>
+          <span class="logo-text-main">A SALON COMPANY</span>
+          <span class="logo-text-sub">HAIR & BEAUTY SERVICES</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#packages" class="nav-link">Packages & Prices</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#franchise" class="nav-link">Franchise</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action CTAs -->
+      <div class="header-actions">
+        <button class="btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="btn btn-outline" id="viewRateCardBtn">
+          <i class="fa-solid fa-receipt"></i> Rate Card
+        </button>
+        <button class="btn btn-gold magnetic-btn" id="openBookingModalBtn">
+          <i class="fa-solid fa-scissors"></i> Book Appointment
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Glassmorphic Drawer Navigation -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="logo-wrapper">
+        <span class="logo-text-number">1993</span>
+        <span class="logo-text-main">A SALON COMPANY</span>
+      </div>
+      <button class="drawer-close" id="drawerCloseBtn">&times;</button>
+    </div>
+    <nav class="mobile-menu">
+      <a href="#hero" class="drawer-link">Home</a>
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#services" class="drawer-link">Services</a>
+      <a href="#packages" class="drawer-link">Packages & Prices</a>
+      <a href="#reviews" class="drawer-link">Reviews & Feedback</a>
+      <a href="#franchise" class="drawer-link">Franchise</a>
+      <a href="#contact" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <button class="btn btn-glass theme-toggle-btn w-full" id="mobileThemeToggleBtn">
+        <i class="fa-solid fa-sun"></i> <span>Light Mode</span>
+      </button>
+      <button class="btn btn-gold w-full" id="mobileBookingBtn">Book Appointment</button>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/1993asaloncompany" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCH58kdfbPH2xELEbHrZxV_w" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STACKABLE CARD DECK CONTAINER -->
+  <main class="deck-container" id="deckContainer">
+
+    <!-- SECTION 1: HERO CAROUSEL & PARTICLE ENGINE CARD -->
+    <section class="deck-card hero-section" id="hero">
+      <canvas id="particleCanvas" class="hero-particle-canvas"></canvas>
+      
+      <!-- Background Hero Image Carousel -->
+      <div class="hero-carousel-slider" id="heroCarousel">
+        <div class="carousel-slide active" style="background-image: linear-gradient(rgba(14, 14, 14, 0.65), rgba(14, 14, 14, 0.85)), url('https://1993asaloncompany.com/assets/wp-content/uploads/2021/beauty_salon_title_bg1-new.jpg');"></div>
+        <div class="carousel-slide" style="background-image: linear-gradient(rgba(14, 14, 14, 0.65), rgba(14, 14, 14, 0.85)), url('https://1993asaloncompany.com/assets/wp-content/uploads/2021/beauty_salon_title_bg22.jpg');"></div>
+        <div class="carousel-slide" style="background-image: linear-gradient(rgba(14, 14, 14, 0.65), rgba(14, 14, 14, 0.85)), url('https://1993asaloncompany.com/assets/wp-content/uploads/1-1.jpg');"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-badge">
+          <i class="fa-solid fa-crown"></i> ESTABLISHED 1993 • MAHARASHTRA
+        </div>
+        <h1 class="hero-title">
+          Essence of <span class="gold-gradient-text">Natural Beauty</span> & Pure Luxury
+        </h1>
+        <p class="hero-subtitle">
+          An inspirational salon brand from the house of Salon Apple. Serving superior quality hair, beauty, makeup, nails, spa, and grooming services for both Men and Women across Pune & Maharashtra.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-gold btn-lg magnetic-btn" id="heroBookBtn">
+            <i class="fa-solid fa-calendar-check"></i> Book a Service
+          </button>
+          <button class="btn btn-glass btn-lg" id="heroRateCardBtn">
+            <i class="fa-solid fa-list-check"></i> View Rate Card
+          </button>
+        </div>
+
+        <!-- Quick Stats Strip -->
+        <div class="hero-stats-grid">
+          <div class="stat-card glass-panel heritage-frame tilt-element">
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+          <div class="stat-card glass-panel heritage-frame tilt-element">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Prime Outlets in MH</div>
+          </div>
+          <div class="stat-card glass-panel heritage-frame tilt-element">
+            <div class="stat-number">50k+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-card glass-panel heritage-frame tilt-element">
+            <div class="stat-number">4.9★</div>
+            <div class="stat-label">Google Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <div class="carousel-controls">
+        <button class="carousel-arrow prev" id="heroPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="carousel-dots" id="heroCarouselDots"></div>
+        <button class="carousel-arrow next" id="heroNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT / BOARDING PASS & STORY CARD -->
+    <section class="deck-card about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">BEAUTY & WELLNESS BOARDING PASS</span>
+          <h2 class="section-title">The Legend of <span class="gold-gradient-text">1993 A Salon Company</span></h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Boarding Pass Left Card -->
+          <div class="about-card glass-panel heritage-frame tilt-element">
+            <div class="boarding-pass-header">
+              <div class="pass-brand">
+                <span class="pass-code">1993-SALON-PASS</span>
+                <span class="pass-status">EXCLUSIVITY GUARANTEED</span>
+              </div>
+              <div class="pass-stamp"><i class="fa-solid fa-certificate"></i> VERIFIED</div>
+            </div>
+            
+            <div class="boarding-pass-body">
+              <h3 class="story-quote">“She believed she could, so she did.”</h3>
+              <p class="story-text">
+                1993 saw the rise of a new star in the highly competitive salon & spa industry when <strong>Mrs. Nayana Chopade</strong> set up Salon Apple in Pune offering only the best of salon services with a small team of experts under her watchful eye.
+              </p>
+              <p class="story-text">
+                In a span of 10 years, Salon Apple became synonymous with quality and consistency, encouraging our founder to extend her passion into empowering youth through Fillit Institute of Hair & Beauty Management.
+              </p>
+              <p class="story-text">
+                Today, <strong>1993 A Salon Company</strong> under Apple Hair & Beauty Services Pvt. Ltd. operates luxury salon outlets at <em>Prabhat Road, DP Road, Magarpatta, Dange Chowk, Salunkevihar in Pune, and Pandharpur</em>, rapidly expanding Pan-India.
+              </p>
+
+              <div class="pass-details-row">
+                <div class="detail-item">
+                  <span class="detail-label">HEADQUARTERS</span>
+                  <span class="detail-val">Law College Road, Pune</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">OPERATING HOURS</span>
+                  <span class="detail-val">9:30 AM - 9:00 PM Daily</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">FOUNDER</span>
+                  <span class="detail-val">Mrs. Nayana Chopade</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Photo Slideshow Right Column -->
+          <div class="story-gallery-card glass-panel heritage-frame tilt-element">
+            <div class="gallery-slider" id="storyGallerySlider">
+              <div class="story-slide active">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/2021/story/1.jpg" alt="1993 Salon Story 1" />
+                <div class="slide-caption">Luxury Interior Ambiance</div>
+              </div>
+              <div class="story-slide">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/2021/story/2.jpg" alt="1993 Salon Story 2" />
+                <div class="slide-caption">Precision Styling & Haircare</div>
+              </div>
+              <div class="story-slide">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/2021/story/3.jpg" alt="1993 Salon Story 3" />
+                <div class="slide-caption">Pampering Spa & Facial Treatments</div>
+              </div>
+              <div class="story-slide">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/2021/story/4.jpg" alt="1993 Salon Story 4" />
+                <div class="slide-caption">Professional Hair & Makeup Team</div>
+              </div>
+            </div>
+            <div class="gallery-nav">
+              <button class="gal-btn" id="galPrevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+              <span class="gal-counter" id="galCounter">1 / 4</span>
+              <button class="gal-btn" id="galNextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 Core Signature Pillars -->
+        <div class="pillars-row">
+          <div class="pillar-card glass-panel tilt-element">
+            <div class="pillar-icon"><i class="fa-solid fa-scissors"></i></div>
+            <h4>Amazing Hair</h4>
+            <p>Shiny, lustrous hair for an Amazing you!</p>
+          </div>
+          <div class="pillar-card glass-panel tilt-element">
+            <div class="pillar-icon"><i class="fa-solid fa-sparkles"></i></div>
+            <h4>Amazing Beauty</h4>
+            <p>Silky smooth skin is an Amazing feeling!</p>
+          </div>
+          <div class="pillar-card glass-panel tilt-element">
+            <div class="pillar-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+            <h4>Amazing Nails</h4>
+            <p>Nail it with your tips… Keep it Amazing!</p>
+          </div>
+          <div class="pillar-card glass-panel tilt-element">
+            <div class="pillar-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h4>Amazing Makeup</h4>
+            <p>Flawless makeup to Amaze the world!</p>
+          </div>
+          <div class="pillar-card glass-panel tilt-element">
+            <div class="pillar-icon"><i class="fa-solid fa-hot-tub-person"></i></div>
+            <h4>Amazing Spa</h4>
+            <p>Pampering that rejuvenates your body & soul!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: BESPOKE SERVICES CAROUSEL & HORIZONTAL SNAP SLIDER CARD -->
+    <section class="deck-card services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">BESPOKE MENU</span>
+          <h2 class="section-title">Our Signature <span class="gold-gradient-text">Services & Craft</span></h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <!-- Category Tab Filter -->
+        <div class="services-tabs">
+          <button class="tab-btn active" data-category="all">All Services</button>
+          <button class="tab-btn" data-category="women">Women</button>
+          <button class="tab-btn" data-category="men">Men</button>
+          <button class="tab-btn" data-category="bridal">Bridal & Spa</button>
+        </div>
+
+        <!-- Single-Row Horizontal Snap Slider Container -->
+        <div class="slider-wrapper">
+          <button class="slider-arrow prev" id="sliderPrevBtn" aria-label="Previous Service">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          
+          <div class="services-slider-row" id="servicesSlider">
+            <!-- Service 1: Creative Haircuts -->
+            <div class="service-card glass-panel heritage-frame tilt-element" data-category="women men">
+              <div class="service-img-box">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/2021/package-icon/1_hair-cutting.png" alt="Haircut & Styling" />
+                <span class="service-tag">Popular</span>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Haircut & Signature Styling</h3>
+                <p class="service-desc">Precision cutting tailored to your facial structure, finished with professional blowdry & styling.</p>
+                <div class="service-footer">
+                  <span class="service-price">Starting ₹499</span>
+                  <button class="btn btn-gold btn-sm select-service-btn" data-service="Haircut & Signature Styling">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 2: Hair Spa & Smoothening -->
+            <div class="service-card glass-panel heritage-frame tilt-element" data-category="women">
+              <div class="service-img-box">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/beauty_salon_icon_1.png" alt="Hair Spa" />
+                <span class="service-tag">Luxury</span>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Nourishing Hair Spa & Keratin</h3>
+                <p class="service-desc">Intense deep-conditioning treatment to eliminate frizz, restore shine, and repair damaged cuticles.</p>
+                <div class="service-footer">
+                  <span class="service-price">Starting ₹1,499</span>
+                  <button class="btn btn-gold btn-sm select-service-btn" data-service="Nourishing Hair Spa & Keratin">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 3: Radiant Facials -->
+            <div class="service-card glass-panel heritage-frame tilt-element" data-category="women men">
+              <div class="service-img-box">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/beauty_salon_icon_4.png" alt="Radiant Facials" />
+                <span class="service-tag">Glow</span>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Radiant Facial & Organic Cleanups</h3>
+                <p class="service-desc">Custom skin treatments using botanical extracts to detoxify, hydrate, and impart a luminous glow.</p>
+                <div class="service-footer">
+                  <span class="service-price">Starting ₹1,199</span>
+                  <button class="btn btn-gold btn-sm select-service-btn" data-service="Radiant Facial & Organic Cleanups">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 4: Nail Art & Extensions -->
+            <div class="service-card glass-panel heritage-frame tilt-element" data-category="women">
+              <div class="service-img-box">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/beauty_salon_icon_2.png" alt="Nail Couture" />
+                <span class="service-tag">Couture</span>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Nail Couture & Gel Extensions</h3>
+                <p class="service-desc">Bespoke nail art, gel extensions, acrylic shaping, and luxury paraffin manicures.</p>
+                <div class="service-footer">
+                  <span class="service-price">Starting ₹899</span>
+                  <button class="btn btn-gold btn-sm select-service-btn" data-service="Nail Couture & Gel Extensions">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 5: Bridal & High Definition Makeup -->
+            <div class="service-card glass-panel heritage-frame tilt-element" data-category="bridal women">
+              <div class="service-img-box">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/2021/package-icon/3_make-up.png" alt="HD Bridal Makeup" />
+                <span class="service-tag">Signature</span>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">HD & Airbrush Bridal Makeup</h3>
+                <p class="service-desc">Exquisite bridal transformations crafted by senior makeup artists for a photo-ready flawless look.</p>
+                <div class="service-footer">
+                  <span class="service-price">Starting ₹4,999</span>
+                  <button class="btn btn-gold btn-sm select-service-btn" data-service="HD & Airbrush Bridal Makeup">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 6: Body Spa & Aromatherapy -->
+            <div class="service-card glass-panel heritage-frame tilt-element" data-category="bridal men women">
+              <div class="service-img-box">
+                <img src="https://1993asaloncompany.com/assets/wp-content/uploads/beauty_salon_icon_5.png" alt="Aromatherapy Spa" />
+                <span class="service-tag">Relax</span>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Aromatherapy Spa & Body Scrub</h3>
+                <p class="service-desc">Soothing full-body massage using therapeutic essential oils to relieve stress and revitalize muscles.</p>
+                <div class="service-footer">
+                  <span class="service-price">Starting ₹1,999</span>
+                  <button class="btn btn-gold btn-sm select-service-btn" data-service="Aromatherapy Spa & Body Scrub">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-arrow next" id="sliderNextBtn" aria-label="Next Service">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PACKAGES, PRICES & 20% OFF MEMBERSHIP BANNER CARD -->
+    <section class="deck-card packages-section" id="packages">
+      <div class="container">
+        <!-- 20% OFF Membership Banner Card -->
+        <div class="membership-banner-card glass-panel heritage-frame">
+          <div class="banner-badge">SPECIAL MEMBERSHIP BENEFIT</div>
+          <div class="banner-main">
+            <div class="banner-discount">20% OFF</div>
+            <div class="banner-info">
+              <h3>Avail Our Exclusive Membership Card</h3>
+              <p>Unlock priority appointment bookings, complimentary add-ons, and flat 20% savings on all services year-round.</p>
+            </div>
+          </div>
+          <button class="btn btn-gold btn-lg" id="bannerEnquireBtn">Claim Membership Card</button>
+        </div>
+
+        <div class="section-header">
+          <span class="section-tag">VALUE CURATED COMBOS</span>
+          <h2 class="section-title">Our Amazing <span class="gold-gradient-text">Packages & Offers</span></h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Female Beauty Package -->
+          <div class="package-card glass-panel heritage-frame tilt-element">
+            <div class="pkg-header">
+              <span class="pkg-icon"><i class="fa-solid fa-spa"></i></span>
+              <h3>Female Beauty Package</h3>
+              <div class="pkg-price">from <span>₹2,000/-</span></div>
+            </div>
+            <ul class="pkg-list">
+              <li><i class="fa-solid fa-check"></i> Radiant Facial / Cleanup</li>
+              <li><i class="fa-solid fa-check"></i> Face & Neck Bleach / De-Tan</li>
+              <li><i class="fa-solid fa-check"></i> Full Arms & Legs Waxing</li>
+              <li><i class="fa-solid fa-check"></i> Classic Spa Manicure</li>
+              <li><i class="fa-solid fa-check"></i> Classic Spa Pedicure</li>
+              <li><i class="fa-solid fa-check"></i> Threading (Eyebrows & Upper lip)</li>
+            </ul>
+            <button class="btn btn-gold w-full select-package-btn" data-package="Female Beauty Package - ₹2000">Enquire Package</button>
+          </div>
+
+          <!-- Female Hair Package -->
+          <div class="package-card glass-panel heritage-frame tilt-element highlight-pkg">
+            <div class="pkg-badge">MOST POPULAR</div>
+            <div class="pkg-header">
+              <span class="pkg-icon"><i class="fa-solid fa-scissors"></i></span>
+              <h3>Female Hair Package</h3>
+              <div class="pkg-price">from <span>₹2,000/-</span></div>
+            </div>
+            <ul class="pkg-list">
+              <li><i class="fa-solid fa-check"></i> Style Director Haircut</li>
+              <li><i class="fa-solid fa-check"></i> Deep Repair Hair Spa</li>
+              <li><i class="fa-solid fa-check"></i> Loreal / Matrix Hair Wash</li>
+              <li><i class="fa-solid fa-check"></i> Blowdry & Heat Styling</li>
+              <li><i class="fa-solid fa-check"></i> Scalp Nourishing Massage</li>
+              <li><i class="fa-solid fa-check"></i> Serum Protection Shield</li>
+            </ul>
+            <button class="btn btn-gold w-full select-package-btn" data-package="Female Hair Package - ₹2000">Enquire Package</button>
+          </div>
+
+          <!-- Male Grooming Package -->
+          <div class="package-card glass-panel heritage-frame tilt-element">
+            <div class="pkg-header">
+              <span class="pkg-icon"><i class="fa-solid fa-user-tie"></i></span>
+              <h3>Male Grooming Package</h3>
+              <div class="pkg-price">from <span>₹1,499/-</span></div>
+            </div>
+            <ul class="pkg-list">
+              <li><i class="fa-solid fa-check"></i> Precision Haircut & Wash</li>
+              <li><i class="fa-solid fa-check"></i> Beard Styling & Hot Towel Shave</li>
+              <li><i class="fa-solid fa-check"></i> Charcoal Detox Facial</li>
+              <li><i class="fa-solid fa-check"></i> Refreshing Scalp Spa</li>
+              <li><i class="fa-solid fa-check"></i> Hand & Foot Reflexology</li>
+              <li><i class="fa-solid fa-check"></i> Hair Styling Product Application</li>
+            </ul>
+            <button class="btn btn-gold w-full select-package-btn" data-package="Male Grooming Package - ₹1499">Enquire Package</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: LIVE SOCIAL STREAM & SPLIT REVIEWS CARD -->
+    <section class="deck-card reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">TESTIMONIALS & INSTAGRAM REELS</span>
+          <h2 class="section-title">Client Love & <span class="gold-gradient-text">Social Highlights</span></h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="split-reviews-layout">
+          <!-- Left Column: Google Review Rating & CTA Card -->
+          <div class="feedback-cta-card glass-panel heritage-frame tilt-element">
+            <div class="google-badge">
+              <i class="fa-brands fa-google"></i> GOOGLE REVIEWS
+            </div>
+            <div class="rating-display">
+              <span class="score">4.9</span>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="count">Based on 1,240+ authentic client ratings</span>
+            </div>
+            <p class="cta-desc">
+              Your feedback inspires our commitment to perfection. Loved your experience at 1993 A Salon Company? Share your thoughts on Google Maps!
+            </p>
+            <a href="https://www.google.com/maps" target="_blank" class="btn btn-gold w-full">
+              <i class="fa-solid fa-pen-to-square"></i> Write a Google Review
+            </a>
+          </div>
+
+          <!-- Right Column: Scrollable Authentic Google Reviews Feed -->
+          <div class="reviews-feed-container glass-panel heritage-frame">
+            <h3 class="feed-header"><i class="fa-solid fa-comments"></i> Recent Client Experiences</h3>
+            
+            <div class="reviews-scroll-feed">
+              <div class="review-item">
+                <div class="reviewer-header">
+                  <div class="reviewer-avatar">SP</div>
+                  <div class="reviewer-info">
+                    <h4>Sneha Paranjape</h4>
+                    <div class="reviewer-meta">Prabhat Road Outlet • 2 days ago</div>
+                  </div>
+                  <div class="review-rating">★★★★★</div>
+                </div>
+                <p class="review-body">
+                  "Visited 1993 A Salon Company on Prabhat Road for hair smoothening and facial. The quiet luxury vibe, ambient music, and expert staff made me feel like royalty! Best salon experience in Pune."
+                </p>
+              </div>
+
+              <div class="review-item">
+                <div class="reviewer-header">
+                  <div class="reviewer-avatar">RK</div>
+                  <div class="reviewer-info">
+                    <h4>Rohit Kulkarni</h4>
+                    <div class="reviewer-meta">Law College Road Outlet • 1 week ago</div>
+                  </div>
+                  <div class="review-rating">★★★★★</div>
+                </div>
+                <p class="review-body">
+                  "Outstanding grooming package! Precision haircut and beard trim with a relaxing scalp spa. Their hygiene standards and copper interior accents look super premium."
+                </p>
+              </div>
+
+              <div class="review-item">
+                <div class="reviewer-header">
+                  <div class="reviewer-avatar">AD</div>
+                  <div class="reviewer-info">
+                    <h4>Ananya Deshmukh</h4>
+                    <div class="reviewer-meta">Magarpatta Outlet • 2 weeks ago</div>
+                  </div>
+                  <div class="review-rating">★★★★★</div>
+                </div>
+                <p class="review-body">
+                  "Got my HD bridal makeup trial done here. The makeup team understood exactly what I wanted. Flawless finish without feeling heavy! Highly recommended."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media / Latest Instagram Videos Stream -->
+        <div class="social-stream-wrapper">
+          <div class="social-header">
+            <h3><i class="fa-brands fa-instagram"></i> Latest Instagram Videos @1993asaloncompany.official</h3>
+            <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fa-brands fa-instagram"></i> View All on Instagram
+            </a>
+          </div>
+
+          <!-- 5 Latest Video Reel Cards Grid -->
+          <div class="reels-grid-five" id="instaFeedGrid">
+            <!-- Video 1: Nanoplastia Hair Treatment -->
+            <div class="reel-card glass-panel heritage-frame tilt-element">
+              <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-thumbnail" style="background-image: url('https://1993asaloncompany.com/assets/wp-content/uploads/2021/story/2.jpg');">
+                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                <span class="views-tag"><i class="fa-solid fa-eye"></i> 24.8k</span>
+                <span class="reel-type-badge"><i class="fa-solid fa-video"></i> REEL</span>
+              </a>
+              <div class="reel-info">
+                <span class="audio-tag"><i class="fa-solid fa-music"></i> ♫ Original Audio - Hair Magic</span>
+                <p class="reel-caption">Nanoplastia & Hair Keratin Transformation! Silky frizz-free shine ✨ #1993ASalonCompany #Nanoplastia #PuneSalon</p>
+                <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-link">Watch Reel &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Video 2: Luxury Salon Outlet Tour -->
+            <div class="reel-card glass-panel heritage-frame tilt-element">
+              <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-thumbnail" style="background-image: url('https://1993asaloncompany.com/assets/wp-content/uploads/2021/story/1.jpg');">
+                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                <span class="views-tag"><i class="fa-solid fa-eye"></i> 18.2k</span>
+                <span class="reel-type-badge"><i class="fa-solid fa-video"></i> REEL</span>
+              </a>
+              <div class="reel-info">
+                <span class="audio-tag"><i class="fa-solid fa-music"></i> ♫ Original Audio - Luxury Ambiance</span>
+                <p class="reel-caption">Take a walk through our luxury Law College Road & Prabhat Road Pune suites 🏛️ #1993ASalon #LuxuryInterior</p>
+                <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-link">Watch Reel &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Video 3: HD Bridal Makeup Look -->
+            <div class="reel-card glass-panel heritage-frame tilt-element">
+              <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-thumbnail" style="background-image: url('https://1993asaloncompany.com/assets/wp-content/uploads/2021/story/4.jpg');">
+                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                <span class="views-tag"><i class="fa-solid fa-eye"></i> 31.5k</span>
+                <span class="reel-type-badge"><i class="fa-solid fa-video"></i> REEL</span>
+              </a>
+              <div class="reel-info">
+                <span class="audio-tag"><i class="fa-solid fa-music"></i> ♫ Original Audio - Bridal Glow</span>
+                <p class="reel-caption">Flawless Airbrush HD Bridal Makeover! Behind the scenes magic 👰‍♀️ #BridalMakeup #1993Salon #PuneBride</p>
+                <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-link">Watch Reel &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Video 4: Male Grooming & Beard Styling -->
+            <div class="reel-card glass-panel heritage-frame tilt-element">
+              <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-thumbnail" style="background-image: url('https://1993asaloncompany.com/assets/wp-content/uploads/2021/story/3.jpg');">
+                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                <span class="views-tag"><i class="fa-solid fa-eye"></i> 12.9k</span>
+                <span class="reel-type-badge"><i class="fa-solid fa-video"></i> REEL</span>
+              </a>
+              <div class="reel-info">
+                <span class="audio-tag"><i class="fa-solid fa-music"></i> ♫ Original Audio - Male Grooming</span>
+                <p class="reel-caption">Gentlemen's Precision Fade, Beard Styling & Hot Towel Detox Spa 🧔‍♂️ #MaleGrooming #PuneMenSalon</p>
+                <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-link">Watch Reel &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Video 5: Nail Artistry & Extensions -->
+            <div class="reel-card glass-panel heritage-frame tilt-element">
+              <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-thumbnail" style="background-image: url('https://1993asaloncompany.com/assets/wp-content/uploads/beauty_salon_icon_2.png'); background-size: auto 60%; background-color: #1a1a1a;">
+                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                <span class="views-tag"><i class="fa-solid fa-eye"></i> 19.4k</span>
+                <span class="reel-type-badge"><i class="fa-solid fa-video"></i> REEL</span>
+              </a>
+              <div class="reel-info">
+                <span class="audio-tag"><i class="fa-solid fa-music"></i> ♫ Original Audio - Nail Artistry</span>
+                <p class="reel-caption">Bespoke Gel Nail Extensions & Couture Chrome Nail Art 💅 #NailArt #1993ASalonCompany</p>
+                <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank" class="reel-link">Watch Reel &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: FRANCHISE OPPORTUNITY & BROCHURE CARD -->
+    <section class="deck-card franchise-section" id="franchise">
+      <div class="container">
+        <div class="franchise-banner glass-panel heritage-frame">
+          <div class="franchise-content">
+            <span class="section-tag">PARTNER WITH US</span>
+            <h2 class="franchise-title">Franchisee <span class="gold-gradient-text">Opportunities Pan-India</span></h2>
+            <p class="franchise-desc">
+              Think out of the box and think big. Turn your entrepreneurial dreams into reality by aligning with Maharashtra's fastest-growing luxury salon chain. Highly qualified experts, high ROI business model, and full operational support from the house of Salon Apple.
+            </p>
+
+            <div class="franchise-features">
+              <div class="feat-item"><i class="fa-solid fa-chart-line"></i> Robust Upward ROI</div>
+              <div class="feat-item"><i class="fa-solid fa-graduation-cap"></i> Staff Training & Academy</div>
+              <div class="feat-item"><i class="fa-solid fa-bullhorn"></i> Pan-India Brand Marketing</div>
+            </div>
+
+            <div class="franchise-actions">
+              <a href="https://1993asaloncompany.com/assets/wp-content/uploads/2021/latest-franchisee-brochure.pdf" target="_blank" class="btn btn-gold btn-lg">
+                <i class="fa-solid fa-file-pdf"></i> Download Franchise Brochure
+              </a>
+              <button class="btn btn-outline btn-lg" id="franchiseEnquireBtn">
+                <i class="fa-solid fa-paper-plane"></i> Apply for Franchise
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: LOCATION, CONTACT & MAP CARD -->
+    <section class="deck-card contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="section-title">Visit Our <span class="gold-gradient-text">Headquarters & Outlets</span></h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info-card glass-panel heritage-frame tilt-element">
+            <h3>1993 A Salon Company</h3>
+            <p class="info-sub">Apple Hair & Beauty Services Pvt. Ltd.</p>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Head Office Address:</strong>
+                <p>2nd Floor, Lunkad Villa, Opp. Lokmat Office, Law College Road, Pune, Maharashtra 411004</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <div>
+                <strong>Other Outlets in MH:</strong>
+                <p>Prabhat Road, DP Road, Magarpatta, Dange Chowk, Salunkevihar (Pune) & Pandharpur</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Call & Whatsapp:</strong>
+                <p><a href="tel:+917030300118">+91 7030 300 118</a> / <a href="tel:+919503264583">+91 9503 264 583</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email Us:</strong>
+                <p><a href="mailto:info@1993asaloncompany.com">info@1993asaloncompany.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://www.facebook.com/1993asaloncompany" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/1993asaloncompany.official/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/1993-a-salon-company" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/1993asalonc" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCH58kdfbPH2xELEbHrZxV_w" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Embedded Map Column -->
+          <div class="map-card glass-panel heritage-frame tilt-element">
+            <iframe 
+              src="https://www.google.com/maps/d/u/1/embed?mid=1NBeL2IgIiER_f6pnQ1vQVUcjZrbEaqX0" 
+              width="100%" 
+              height="100%" 
+              style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(1.2);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              title="1993 A Salon Company Map Location">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer-bottom">
+        <div class="container footer-content">
+          <p>© 2026 1993 A Salon Company (Apple Hair & Beauty Services Pvt. Ltd.). All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="javascript:void(0)" id="openTermsBtn">Terms & Conditions</a>
+            <span class="sep">•</span>
+            <a href="javascript:void(0)" id="openPrivacyBtn">Privacy Policy</a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. 2-STEP ONLINE BOOKING MODAL -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card glass-panel heritage-frame">
+      <button class="modal-close" id="closeBookingModal">&times;</button>
+      
+      <div class="modal-header-badge">ONLINE APPOINTMENT RESERVATION</div>
+      
+      <!-- Step Indicators -->
+      <div class="booking-steps-bar">
+        <div class="step-circle active" id="step1Circle">1</div>
+        <div class="step-line" id="stepLine"></div>
+        <div class="step-circle" id="step2Circle">2</div>
+      </div>
+
+      <!-- Step 1: Select Service & Outlet -->
+      <div class="booking-step-content active" id="bookingStep1">
+        <h3>Step 1: Choose Service & Outlet</h3>
+        
+        <div class="form-group">
+          <label>Select Outlet Location</label>
+          <select id="bookOutlet" class="form-control">
+            <option value="Law College Road, Pune (Headquarters)">Law College Road, Pune (Headquarters)</option>
+            <option value="Prabhat Road, Pune">Prabhat Road, Pune</option>
+            <option value="DP Road, Pune">DP Road, Pune</option>
+            <option value="Magarpatta, Pune">Magarpatta, Pune</option>
+            <option value="Dange Chowk, Pune">Dange Chowk, Pune</option>
+            <option value="Salunkevihar, Pune">Salunkevihar, Pune</option>
+            <option value="Pandharpur Branch">Pandharpur Branch</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Select Service</label>
+          <select id="bookService" class="form-control">
+            <option value="Haircut & Signature Styling">Haircut & Signature Styling</option>
+            <option value="Nourishing Hair Spa & Keratin">Nourishing Hair Spa & Keratin</option>
+            <option value="Radiant Facial & Organic Cleanups">Radiant Facial & Organic Cleanups</option>
+            <option value="Nail Couture & Gel Extensions">Nail Couture & Gel Extensions</option>
+            <option value="HD & Airbrush Bridal Makeup">HD & Airbrush Bridal Makeup</option>
+            <option value="Aromatherapy Spa & Body Scrub">Aromatherapy Spa & Body Scrub</option>
+            <option value="Female Beauty Package - ₹2000">Female Beauty Package (₹2000)</option>
+            <option value="Female Hair Package - ₹2000">Female Hair Package (₹2000)</option>
+            <option value="Male Grooming Package - ₹1499">Male Grooming Package (₹1499)</option>
+          </select>
+        </div>
+
+        <button class="btn btn-gold w-full mt-4" id="nextToStep2Btn">Next Step: Schedule Date & Time &rarr;</button>
+      </div>
+
+      <!-- Step 2: Date, Time & Client Details -->
+      <div class="booking-step-content" id="bookingStep2">
+        <h3>Step 2: Date & Client Details</h3>
+        
+        <div class="form-row">
+          <div class="form-group half">
+            <label>Preferred Date</label>
+            <input type="date" id="bookDate" class="form-control" />
+          </div>
+          <div class="form-group half">
+            <label>Preferred Time Slot</label>
+            <select id="bookTime" class="form-control">
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="02:30 PM">02:30 PM</option>
+              <option value="05:00 PM">05:00 PM</option>
+              <option value="07:00 PM">07:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="bookName" placeholder="Enter your name" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+          <label>Mobile Number (10 Digits)</label>
+          <input type="tel" id="bookPhone" placeholder="Enter 10-digit mobile number" class="form-control" required />
+        </div>
+
+        <div class="form-actions-row">
+          <button class="btn btn-outline" id="backToStep1Btn">&larr; Back</button>
+          <button class="btn btn-gold" id="confirmBookingBtn">Confirm & Generate Boarding Ticket</button>
+        </div>
+      </div>
+
+      <!-- Ticket Confirmation State -->
+      <div class="booking-step-content" id="bookingTicketState">
+        <div class="digital-ticket heritage-frame">
+          <div class="ticket-header">
+            <i class="fa-solid fa-circle-check ticket-icon"></i>
+            <h4>APPOINTMENT CONFIRMED</h4>
+            <span class="ticket-code" id="ticketCode">#1993-84920</span>
+          </div>
+
+          <div class="ticket-body">
+            <div class="t-row"><span>Client:</span> <strong id="tClient">Sneha Sharma</strong></div>
+            <div class="t-row"><span>Service:</span> <strong id="tService">Haircut & Styling</strong></div>
+            <div class="t-row"><span>Outlet:</span> <strong id="tOutlet">Law College Road</strong></div>
+            <div class="t-row"><span>Date & Time:</span> <strong id="tDateTime">Tomorrow @ 12:00 PM</strong></div>
+          </div>
+
+          <div class="ticket-footer">
+            <p>Show this Boarding Ticket at reception for 20% off add-ons!</p>
+            <button class="btn btn-gold btn-sm w-full" id="closeTicketBtn">Done</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 2. RATE CARD LIGHTBOX MODAL -->
+  <div class="modal-overlay" id="rateCardModal">
+    <div class="modal-card rate-card-box glass-panel heritage-frame">
+      <button class="modal-close" id="closeRateCardModal">&times;</button>
+      <h3 class="modal-title">1993 A Salon Company - Official Price Rate Card</h3>
+      
+      <div class="rate-card-viewer">
+        <div class="rate-page-content" id="ratePageContent">
+          <!-- Rate card items -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. ENQUIRE NOW GENERAL MODAL -->
+  <div class="modal-overlay" id="enquireModal">
+    <div class="modal-card glass-panel heritage-frame">
+      <button class="modal-close" id="closeEnquireModal">&times;</button>
+      <h3 class="modal-title">Quick Enquiry</h3>
+      <p class="modal-sub">Have a question regarding Franchise, Membership, or Services?</p>
+      
+      <form id="generalEnquiryForm">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" class="form-control" placeholder="Enter Full Name" required />
+        </div>
+        <div class="form-group">
+          <label>Mobile Number</label>
+          <input type="tel" class="form-control" placeholder="10 Digit Mobile Number" required />
+        </div>
+        <div class="form-group">
+          <label>Interested In</label>
+          <select class="form-control">
+            <option value="Salon Services">Salon Services</option>
+            <option value="Franchisee Opportunity">Franchisee Opportunity</option>
+            <option value="Education & Fillit Academy">Education & Academy</option>
+            <option value="20% OFF Membership Card">20% OFF Membership Card</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message / Notes</label>
+          <textarea class="form-control" rows="3" placeholder="Tell us how we can help you..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold w-full">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. LEGAL & POLICY MODALS -->
+  <div class="modal-overlay" id="termsModal">
+    <div class="modal-card glass-panel heritage-frame">
+      <button class="modal-close" id="closeTermsModal">&times;</button>
+      <h3 class="modal-title">Terms & Conditions</h3>
+      <div class="policy-body">
+        <p>Welcome to 1993 A Salon Company (Apple Hair & Beauty Services Pvt. Ltd.). By scheduling services or visiting our salon premises in Maharashtra, you agree to the following terms:</p>
+        <ul>
+          <li><strong>Appointments:</strong> Please arrive 10 minutes before your scheduled slot. Cancellations should be communicated at least 2 hours prior.</li>
+          <li><strong>Offers & Memberships:</strong> 20% OFF Membership benefits cannot be combined with existing festive discounts.</li>
+          <li><strong>Hygiene & Safety:</strong> All our equipment and salon instruments undergo hospital-grade sterilization.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="privacyModal">
+    <div class="modal-card glass-panel heritage-frame">
+      <button class="modal-close" id="closePrivacyModal">&times;</button>
+      <h3 class="modal-title">Privacy Policy</h3>
+      <div class="policy-body">
+        <p>1993 A Salon Company respects client privacy. Personal information collected during online booking or inquiry forms is strictly used for appointment management and internal communication.</p>
+        <ul>
+          <li>We do not sell, rent, or share your personal data with third-party marketers.</li>
+          <li>Payment transactions are processed securely adhering to RBI guidelines.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
